@@ -13,7 +13,7 @@ return function(Settings)
             if Character and Character:FindFirstChild("HumanoidRootPart") then
                 local HRP = Character.HumanoidRootPart
                 local Goal = {Position = TargetPos}
-                local TweenInfo = TweenInfo.new(1.5, Enum.EasingStyle.Linear) -- Dịch chuyển chậm 1.5 giây
+                local TweenInfo = TweenInfo.new(1.5, Enum.EasingStyle.Linear) 
                 local Tween = TweenService:Create(HRP, TweenInfo, Goal)
                 Tween:Play()
             end
@@ -42,7 +42,7 @@ return function(Settings)
            
                     if LocalPlayer.Character:FindFirstChildOfClass("Tool") then
                         LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
-                        wait(math.random(0.3, 0.7)) -- Delay để tránh bị phát hiện
+                        wait(math.random(0.3, 0.7))
                     end
                 end
             end
